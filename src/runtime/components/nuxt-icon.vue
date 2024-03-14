@@ -3,7 +3,7 @@
     :is="icon"
     :class="{
       'nuxt-icon': fontControlled,
-      'nuxt-icon--fill': !filled,
+      'nuxt-icon--fill': !filled
     }"
   />
 </template>
@@ -17,34 +17,21 @@
       filled: {
         type: Boolean,
         required: false,
-        default: false,
+        default: false
       },
       fontControlled: {
         type: Boolean,
         required: false,
-        default: true,
+        default: true
       },
       icon: {
         type: Object,
-        required: true,
+        required: true
       },
       name: {
         type: String,
-        required: false,
-      },
-    },
-  }
+        required: false
+      }
+    }
+  };
 </script>
-
-<style>
-  .nuxt-icon {
-    width: 1em;
-    height: 1em;
-    margin-bottom: 0.125em;
-    vertical-align: middle;
-  }
-  .nuxt-icon--fill,
-  .nuxt-icon--fill * {
-    fill: currentColor;
-  }
-</style>
